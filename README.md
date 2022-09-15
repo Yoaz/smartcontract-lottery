@@ -7,3 +7,5 @@ How do we want to test this?
 1. 'mainnet-fork'
 2. 'development' with mocks
 3. 'testnet'
+
+BackEnd part for this can be found: https://github.com/Yoaz/smartcontract-lottery-frontend

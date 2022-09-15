@@ -86,4 +86,9 @@ contract Lottery is VRFConsumerBase, Ownable {
         lottery_state = LOTTERY_STATE.CLOSED;
         randomness = _randomness;
     }
+
+    function getLotteryTreasury() public view returns(uint256){
+        uint256 balance = address(this).balance;
+        return balance;
+    }
 }
