@@ -91,4 +91,8 @@ contract Lottery is VRFConsumerBase, Ownable {
         uint256 balance = address(this).balance;
         return balance;
     }
+
+    function getNumOfParticipants() public view returns(uint256){
+        return players.length;
+    }
 }
