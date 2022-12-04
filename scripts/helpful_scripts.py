@@ -89,7 +89,7 @@ def deploy_mocks(contract_name):
 # @para link_token = in case of a specific link token address to use, otherwise default
 # @para value = default 0.1 LINK
 def fund_with_link(
-    contract_address, account=None, link_token=None, value=100000000000000000
+    contract_address, account=None, link_token=None, value=250000000000000000
 ):
     account = account if account else get_account()
     link_token = link_token if link_token else get_contract("link_token")
